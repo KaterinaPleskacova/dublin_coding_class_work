@@ -1,11 +1,42 @@
 body {
     background-color: rgb(22, 75, 75);
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
-img {
+.astronaut {
     width: 30rem;
     
+}
+
+header {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    color: #112c38;
+    padding: 2rem;
+    align-items: center;
+}
+
+.avatar {
+    height: auto;
+    width: 5rem;
+}
+
+button {
+    box-shadow: -5px 5px 5px 2px green;
+    height: 1.5rem;
+    
+}
+
+button:hover {
+    background-color: #0b3b0b;
+    color: #ffffff;
+}
+
+h1 {
+    text-shadow: -5px 5px 5px green;
 }
 
 .tooltip-text {
@@ -27,18 +58,37 @@ img {
     visibility: visible;
 }
 
+ol {
+    width: 12rem;
+    border: 2px solid #141111;
+    padding: 1.5rem;
+    margin: 10px;
+}
+
 ol li {
     font-size: 12px;
     font-weight: bold;
+    padding: 5px;
+}
+
+ol li:nth-child(odd) {
+    background-color: #ccc;
+    color: #141111;
 }
 
 ul li {
     color: #3b87eb;
-    
+    font-size: 1.5rem;
     max-width: 50%;
 }
 
 ul {
     height: 100px;
     overflow: scroll;
+    width: 15rem;
+    margin: 10px;
+}
+
+ul li:first-child, ul li:last-child {
+    font-weight: bold;
 }
